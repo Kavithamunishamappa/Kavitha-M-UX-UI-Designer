@@ -50,7 +50,7 @@ table {
 
 body {
   background-color: #ffffff;
-  font-family: 'lato': sans-serif;
+  font-family: 'playfair display', sans-serif;
   font-size: 16px;
   font-weight: 300;
   line-height: 1.6;
@@ -113,28 +113,33 @@ h4 {
   font-weight: 700;
 }
 
-a:focus{
+a  {
   color: #ff7f50;
   text-decoration: none;
 }
 a:hover {
   color: #cc6540;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 a:visited {
   color: #ff7f50;
+  text-decoration: underline;
 }
 a:active {
   color: #994c30;
+}
+a:hover,
+a:focus {
+  color: #cc6540;
+  text-decoration: underline;
 }
 
 .button.Contact {
   background-color: transparent;
   color: #ff7f50;
   text-transform: uppercase;
-  border: 2px solid
-  border-color: #ff7f50;
+  border: 2px solid #ff7f50;
 }
 .button.contact:hover {
   background-color: #ff7f50;
@@ -232,6 +237,7 @@ nav > ul > li > a:active {
   text-transform: uppercase;
   font-weight: 700;
   text-decoration: underline;
+  color: #CC6540;
 }
 
 #about {
@@ -245,4 +251,52 @@ nav > ul > li > a:active {
 
 #E-Learn proj{
   padding-top: 15px;
+}
+
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==============================
+X-large devices (1440px or larger)
+================================= */
+@media only screen and (min-width: 1440px) {
 }
