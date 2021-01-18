@@ -53,7 +53,7 @@ body {
   font-family: 'playfair display', sans-serif;
   font-size: 16px;
   font-weight: 300;
-  line-height: 1.6;
+  line-height: 1.8;
   color: #4a4a4a;
 }
 
@@ -124,7 +124,7 @@ a:hover {
 
 a:visited {
   color: #ff7f50;
-  text-decoration: underline;
+
 }
 a:active {
   color: #994c30;
@@ -135,15 +135,50 @@ a:focus {
   text-decoration: underline;
 }
 
-.button.Contact {
-  background-color: transparent;
-  color: #ff7f50;
-  text-transform: uppercase;
-  border: 2px solid #ff7f50;
+
 }
+
 .button.contact:hover {
   background-color: #ff7f50;
   color: #ffffff;
+}
+.button {
+  display: inline-block;
+  background-color: #000000;
+  color: #ffffff;
+  font-weight: 400;
+  padding: 5px;
+  border-radius: 1px;
+  border-bottom: 1px solid #994c30;
+  transition-duration: 0.2s;
+
+}
+
+.button:hover{
+  opacity: 0.8;
+  text-decoration: none;
+}
+
+.button:active {
+  opacity: 0.8;
+  text-decoration: none;
+}
+
+.button.Contact {
+  background-color: transparent;
+  color: #000000;
+  text-transform: uppercase;
+  border: 2px solid #ff7f50;
+
+}
+
+.button.contact:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+.button.contact:active {
+  opacity: 0.8;
+  text-decoration: none;
 }
 
 /* Layout styling */
@@ -244,59 +279,15 @@ nav > ul > li > a:active {
   padding-top: 10px;
 }
 
-#footer {
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
 #E-Learn proj{
   padding-top: 15px;
 }
 
-/* ==============================
-Medium devices (640px and larger)
-================================= */
-@media only screen and (min-width: 640px) {
+footer{
+  background-color: #FCFCFC;
+  text-align: center;
+  color: #00000;
+  bottom: 0px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* ==============================
-Large devices (1024px or larger)
-================================= */
-@media only screen and (min-width: 1024px) {
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* ==============================
-X-large devices (1440px or larger)
-================================= */
-@media only screen and (min-width: 1440px) {
 }
