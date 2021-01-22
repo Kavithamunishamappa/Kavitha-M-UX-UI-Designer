@@ -60,8 +60,10 @@ body {
 
 header {
   background-color: #AEB8B8;
-  padding: 10px;
+	padding: 10px;
   margin: 10px;
+  position: relative;
+	text-align: center;
 }
 
 main {
@@ -135,9 +137,6 @@ a:focus {
   text-decoration: underline;
 }
 
-
-}
-
 .button.contact:hover {
   background-color: #ff7f50;
   color: #ffffff;
@@ -146,7 +145,7 @@ a:focus {
   display: inline-block;
   background-color: #000000;
   color: #ffffff;
-  font-weight: 400;
+  font-weight: 200;
   padding: 5px;
   border-radius: 1px;
   border-bottom: 1px solid #994c30;
@@ -168,7 +167,7 @@ a:focus {
   background-color: transparent;
   color: #000000;
   text-transform: uppercase;
-  border: 2px solid #ff7f50;
+  border: 1px solid #ff7f50;
 
 }
 
@@ -191,12 +190,12 @@ a:focus {
 }
 
 #hero h1 {
-  text-align: left;
-}
-#hero span {
-  display: block;
+  text-align: centre;
 }
 
+#hero span {
+	display: block;
+}
 
 .row {
   margin: 1px 0;
@@ -222,12 +221,19 @@ a:focus {
 
 .logo {
   max-width: 250px;
+	height: auto;
 }
+
+nav {
+  width: 100%;
+}
+
 
 nav>ul {
   list-style-type: none;
   padding: 0;
-  margin: 0;
+	margin: 0;
+text-align: center;
 }
 
 nav > ul > li {
@@ -241,6 +247,7 @@ nav > ul > li > a {
   font-weight: 700;
   color: #4a4a4a;
   text-decoration: none;
+
 }
 
 nav > ul > li > a:visited {
@@ -282,6 +289,46 @@ nav > ul > li > a:active {
 #E-Learn proj{
   padding-top: 15px;
 }
+@keyframes color-change {
+  0% {
+    fill: #EDC655;
+  }
+
+  50% {
+    fill: #fcffad;
+  }
+
+  100% {
+    fill: #f76414;
+  }
+}
+
+
+.sun {
+  animation-duration: 4s;
+  animation-name: color-change;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+@keyframes cloud-move {
+  from {transform: translate(0,50px);}
+  to {transform: translate(200px,50px);}
+}
+.cloud-front {
+  animation-duration: 30s;
+  animation-name: cloud-move;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+
+@keyframes cloud-move-reverse {
+  from {transform: translate(446px,48px);}
+  to {transform: translate(100px, 48px);}
+}
+
 
 footer{
   background-color: #FCFCFC;
@@ -289,5 +336,82 @@ footer{
   color: #00000;
   bottom: 0px;
 }
+
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+	header {
+	  text-align: unset;
+		padding: 20px 0 13px;
+	}
+
+	nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+
+
+
+.col-md-6 {
+  width: 50%;
+}
+
+[class*="col-"] {
+  float: left;
+	padding: 5px;
+
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+}
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+
+	header {
+	  text-align: unset;
+		padding: 20px 0 13px;
+	}
+
+
+body {
+	    font-size: 18px;
+	  }
+
+	nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+
+.container {
+	max-width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.col-lg-6-left {
+	width: 60%;
+}
+.col-lg-6-left {
+	width: 40%;
+}
+
+[class*="col-"] {
+  float: left;
+padding: 10px;
+}
+	#about h3 {
+    margin-top: 0;
+  }
+
 
 }
