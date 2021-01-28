@@ -11,42 +11,45 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  display: block;
 }
 
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
 
 * {
   box-sizing: border-box;
 }
-
 
 body {
   background-color: #ffffff;
@@ -57,34 +60,36 @@ body {
   color: #4a4a4a;
 }
 
-
 header {
   background-color: #AEB8B8;
-	padding: 10px;
+  padding: 10px;
   margin: 10px;
   position: relative;
-	text-align: center;
+
 }
 
 main {
   padding-top: .5px;
 }
 
-header{
+header {
   border-bottom: 2px solid #4a4a4a;
 }
-header{
-  border-top:2px solid #4a4a4a;
+
+header {
+  border-top: 2px solid #4a4a4a;
 }
-header{
+
+header {
   border-left: 2px solid #4a4a4a;
 }
-header{
+
+header {
   border-right: 2px solid #4a4a4a;
 }
 
 img {
-width: 100%;
+  width: 100%;
 }
 
 h1, h2, h3, h4 {
@@ -98,27 +103,28 @@ h1, h2, h3, h4 {
 h1 {
   font-size: 2.00em;
   font-weight: 700;
-
 }
 
 h2 {
   font-size: 1.80em;
   font-weight: 700;
-  }
+}
 
 h3 {
   font-size: 1.25em;
   font-weight: 700;
-  }
+}
+
 h4 {
   font-size: 1.25em;
   font-weight: 700;
 }
 
-a  {
+a {
   color: #ff7f50;
   text-decoration: none;
 }
+
 a:hover {
   color: #cc6540;
   text-decoration: underline;
@@ -126,11 +132,12 @@ a:hover {
 
 a:visited {
   color: #ff7f50;
-
 }
+
 a:active {
   color: #994c30;
 }
+
 a:hover,
 a:focus {
   color: #cc6540;
@@ -141,6 +148,7 @@ a:focus {
   background-color: #ff7f50;
   color: #ffffff;
 }
+
 .button {
   display: inline-block;
   background-color: #000000;
@@ -150,10 +158,9 @@ a:focus {
   border-radius: 1px;
   border-bottom: 1px solid #994c30;
   transition-duration: 0.2s;
-
 }
 
-.button:hover{
+.button:hover {
   opacity: 0.8;
   text-decoration: none;
 }
@@ -168,20 +175,19 @@ a:focus {
   color: #000000;
   text-transform: uppercase;
   border: 1px solid #ff7f50;
-
 }
 
 .button.contact:hover {
   background-color: #000000;
   color: #ffffff;
 }
+
 .button.contact:active {
   opacity: 0.8;
   text-decoration: none;
 }
 
 /* Layout styling */
-
 #hero {
   background-color: #ffe4c4;
   padding: 20px 0;
@@ -194,7 +200,7 @@ a:focus {
 }
 
 #hero span {
-	display: block;
+  display: block;
 }
 
 .row {
@@ -210,47 +216,66 @@ a:focus {
   border-bottom: 2px solid #4a4a4a;
 }
 
-
 .container {
   padding: 0 15px;
 }
+
 .container {
   max-width: 1200px;
 }
 
-
 .logo {
-  max-width: 250px;
-	height: auto;
+  max-width: 150px;
+  height: auto;
+}
+.icon {
+  display: inline-block;
+  width: 3.5em;
+  text-align: center;
 }
 
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+	padding-right: 0;
+}
+navtoggle.responsive li  {
+  display: block;
+}
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid rgba(255,127,80,0.5);
+}
+
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
+}
 nav {
   width: 100%;
 }
 
-
 nav>ul {
   list-style-type: none;
   padding: 0;
-	margin: 0;
-text-align: center;
+  margin: 0;
+  text-align: center;
 }
 
-nav > ul > li {
-  display: inline-block;
+nav>ul>li {
+	display: inline-block;
 }
 
-nav > ul > li > a {
-  display: inline-block;
-  padding: 0 5px;
-  text-transform: uppercase;
-  font-weight: 700;
-  color: #4a4a4a;
-  text-decoration: none;
 
-}
-
-nav > ul > li > a:visited {
+nav>ul>li>a {
   display: inline-block;
   padding: 0 5px;
   text-transform: uppercase;
@@ -258,7 +283,17 @@ nav > ul > li > a:visited {
   color: #4a4a4a;
   text-decoration: none;
 }
-nav > ul > li > a:hover {
+
+nav>ul>li>a:visited {
+  display: inline-block;
+  padding: 0 5px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #4a4a4a;
+  text-decoration: none;
+}
+
+nav>ul>li>a:hover {
   display: inline-block;
   padding: 0 5px;
   text-transform: uppercase;
@@ -266,14 +301,15 @@ nav > ul > li > a:hover {
   text-decoration: underline;
 }
 
-nav > ul > li > a:focus {
+nav>ul>li>a:focus {
   display: inline-block;
   padding: 0 5px;
   text-transform: uppercase;
   font-weight: 700;
   text-decoration: underline;
 }
-nav > ul > li > a:active {
+
+nav>ul>li>a:active {
   display: inline-block;
   padding: 0 5px;
   text-transform: uppercase;
@@ -286,9 +322,10 @@ nav > ul > li > a:active {
   padding-top: 10px;
 }
 
-#E-Learn proj{
+#E-Learn proj {
   padding-top: 15px;
 }
+
 @keyframes color-change {
   0% {
     fill: #EDC655;
@@ -303,7 +340,6 @@ nav > ul > li > a:active {
   }
 }
 
-
 .sun {
   animation-duration: 4s;
   animation-name: color-change;
@@ -311,10 +347,17 @@ nav > ul > li > a:active {
   animation-direction: alternate;
   animation-timing-function: linear;
 }
+
 @keyframes cloud-move {
-  from {transform: translate(0,50px);}
-  to {transform: translate(200px,50px);}
+  from {
+    transform: translate(0, 50px);
+  }
+
+  to {
+    transform: translate(200px, 50px);
+  }
 }
+
 .cloud-front {
   animation-duration: 30s;
   animation-name: cloud-move;
@@ -323,95 +366,129 @@ nav > ul > li > a:active {
   animation-timing-function: linear;
 }
 
-
 @keyframes cloud-move-reverse {
-  from {transform: translate(446px,48px);}
-  to {transform: translate(100px, 48px);}
+  from {
+    transform: translate(446px, 48px);
+  }
+
+  to {
+    transform: translate(100px, 48px);
+  }
 }
 
-
-footer{
+footer {
   background-color: #FCFCFC;
   text-align: center;
   color: #00000;
   bottom: 0px;
 }
 
+/* === Small Devices (640px and smaller) === */
+@media only screen and (max-width:640px) {
+	header {
+    padding: 10px 0 10px;
+  }
+
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+}
+
+
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
 @media only screen and (min-width: 640px) {
-	header {
-	  text-align: unset;
-		padding: 20px 0 13px;
-	}
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
 
-	nav {
+  nav {
     width: auto;
     float: right;
     margin-top: 4px;
   }
+	.navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+	.navtoggle li:last-child {
+    display: none;
+  }
+	.navtoggle.responsive nav {
+    padding: 0px;
+  }
 
-
+	nav > ul {
+    margin: 1 em 0;
+  }
 
 .col-md-6 {
-  width: 50%;
+    width: 50%;
+  }
+
+  [class*="col-"] {
+    float: left;
+    padding: 5px;
+  }
+	.row::after {
+	 content: "";
+	 clear: both;
+	 display: table;
+ }
+ .container {
+    max-width: 640px;
+    margin: 0 auto;
+  }
 }
 
-[class*="col-"] {
-  float: left;
-	padding: 5px;
 
-}
 
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
 
-}
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
 
-	header {
-	  text-align: unset;
-		padding: 20px 0 13px;
-	}
+  body {
+    font-size: 18px;
+  }
 
-
-body {
-	    font-size: 18px;
-	  }
-
-	nav {
+  nav {
     width: auto;
     float: right;
     margin-top: 4px;
   }
 
-.container {
-	max-width: 1200px;
-	margin-left: auto;
-	margin-right: auto;
-}
 
-.col-lg-6-left {
-	width: 60%;
-}
-.col-lg-6-left {
-	width: 40%;
-}
-
-[class*="col-"] {
-  float: left;
-padding: 10px;
-}
-	#about h3 {
-    margin-top: 0;
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
+  .col-lg-6-left {
+    width: 60%;
+  }
 
+  .col-lg-6-left {
+    width: 40%;
+  }
+
+  [class*="col-"] {
+    float: left;
+    padding: 10px;
+  }
+	navtoggle li:last-child {
+  display: none;
+}
+
+  #about h3 {
+    margin-top: 0;
+  }
 }
