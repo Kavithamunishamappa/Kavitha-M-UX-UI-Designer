@@ -228,11 +228,7 @@ a:focus {
   max-width: 150px;
   height: auto;
 }
-.icon {
-  display: inline-block;
-  width: 3.5em;
-  text-align: center;
-}
+
 
 .navtoggle, .navtoggle.responsive {
   position: relative;
@@ -382,18 +378,39 @@ footer {
   color: #00000;
   bottom: 0px;
 }
-
 /* === Small Devices (640px and smaller) === */
 @media only screen and (max-width:640px) {
 	header {
     padding: 10px 0 10px;
   }
+	.navtoggle li:not(:last-child) {
+	  display: none;
+	}
+	.title {
+    font-size: 1.625em;
+    font-weight: 400;
+    color: #FFFFFF;
+  }
 
-.navtoggle li:not(:last-child) {
-  display: none;
+  .navtoggle.responsive nav {
+    padding: 0px 0 0;
+  }
+
+  .navtoggle.responsive li {
+    display: block;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .navtoggle.responsive li:last-child {
+    padding: 0 0 10px;
+  }
+
+
+
 }
 
-}
+
 
 
 /* ==============================
@@ -410,19 +427,22 @@ Medium devices (640px and larger)
     float: right;
     margin-top: 4px;
   }
-	.navtoggle li:not(:last-child) {
+	.logo {
+    max-width: 250px;
+  }
+  nav > ul > li {
     display: inline-block;
   }
-	.navtoggle li:last-child {
+  .navtoggle li:last-child {
     display: none;
   }
-	.navtoggle.responsive nav {
-    padding: 0px;
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
   }
-
-	nav > ul {
+  nav > ul {
     margin: 1 em 0;
   }
+	
 
 .col-md-6 {
     width: 50%;
