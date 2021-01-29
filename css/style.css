@@ -313,10 +313,10 @@ nav>ul>li>a:active {
   text-decoration: underline;
   color: #CC6540;
 }
-
 #about {
   padding-top: 10px;
 }
+
 
 #E-Learn proj {
   padding-top: 15px;
@@ -381,33 +381,26 @@ footer {
 /* === Small Devices (640px and smaller) === */
 @media only screen and (max-width:640px) {
 	header {
-    padding: 10px 0 10px;
-  }
-	.navtoggle li:not(:last-child) {
+	 padding: 10px 0 10px;
+ }
+
+ .navtoggle li:not(:last-child) {
 	  display: none;
 	}
-	.title {
-    font-size: 1.625em;
-    font-weight: 400;
-    color: #FFFFFF;
-  }
 
-  .navtoggle.responsive nav {
-    padding: 0px 0 0;
-  }
+ .navtoggle.responsive nav {
+	 padding: 0px 0 0;
+ }
 
   .navtoggle.responsive li {
-    display: block;
-    text-align: center;
-    padding: 10px 0;
+ 	 display: block;
+ 	 text-align: center;
+ 	 padding: 10px 0;
   }
 
-  .navtoggle.responsive li:last-child {
-    padding: 0 0 10px;
-  }
-
-
-
+ .navtoggle.responsive li:last-child {
+	 padding: 0 0 10px;
+ }
 }
 
 
@@ -427,22 +420,24 @@ Medium devices (640px and larger)
     float: right;
     margin-top: 4px;
   }
-	.logo {
-    max-width: 250px;
+	.navtoggle li:not(:last-child) {
+    display: inline-block;
   }
+  nav > ul {
+    margin: 1 em 0;
+  }
+	.logo {
+  max-width: 250px;
+  
+}
   nav > ul > li {
     display: inline-block;
   }
   .navtoggle li:last-child {
     display: none;
   }
-  .navtoggle li:not(:last-child) {
-    display: inline-block;
-  }
-  nav > ul {
-    margin: 1 em 0;
-  }
-	
+
+
 
 .col-md-6 {
     width: 50%;
@@ -511,4 +506,6 @@ Large devices (1024px or larger)
   #about h3 {
     margin-top: 0;
   }
+
+
 }
