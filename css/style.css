@@ -53,7 +53,7 @@ table {
 
 body {
   background-color: #ffffff;
-  font-family: 'playfair display', sans-serif;
+  font-family: "PT Serif", montserrat;
   font-size: 16px;
   font-weight: 300;
   line-height: 1.8;
@@ -61,32 +61,32 @@ body {
 }
 
 header {
-  background-color: #AEB8B8;
+
   padding: 10px;
   margin: 10px;
   position: relative;
-
 }
 
 main {
-  padding-top: .5px;
+  padding-top: 20px;
 }
 
 header {
-  border-bottom: 2px solid #4a4a4a;
+  border-bottom: 4px solid #4a4a4a;
 }
 
 header {
-  border-top: 2px solid #4a4a4a;
+  border-top: 4px solid #4a4a4a;
 }
 
 header {
-  border-left: 2px solid #4a4a4a;
+  border-left: 4px solid #4a4a4a;
 }
 
 header {
-  border-right: 2px solid #4a4a4a;
+  border-right: 4px solid #4a4a4a;
 }
+
 
 img {
   width: 100%;
@@ -187,17 +187,17 @@ a:focus {
   text-decoration: none;
 }
 
+
+
 /* Layout styling */
 #hero {
-  background-color: #ffe4c4;
+  background-color: #ffffff;
   padding: 20px 0;
   display: inline-block;
   width: 100%;
 }
 
-#hero h1 {
-  text-align: centre;
-}
+
 
 #hero span {
   display: block;
@@ -318,23 +318,11 @@ nav>ul>li>a:active {
 }
 
 
-#E-Learn proj {
+#E-Learnproj {
   padding-top: 15px;
 }
 
-@keyframes color-change {
-  0% {
-    fill: #EDC655;
-  }
 
-  50% {
-    fill: #fcffad;
-  }
-
-  100% {
-    fill: #f76414;
-  }
-}
 
 .sun {
   animation-duration: 4s;
@@ -373,9 +361,9 @@ nav>ul>li>a:active {
 }
 
 footer {
-  background-color: #FCFCFC;
+  background-color: #AEB8B8;
   text-align: center;
-  color: #00000;
+  color: #000000;
   bottom: 0px;
 }
 /* === Small Devices (640px and smaller) === */
@@ -392,18 +380,17 @@ footer {
 	 padding: 0px 0 0;
  }
 
-  .navtoggle.responsive li {
- 	 display: block;
- 	 text-align: center;
- 	 padding: 10px 0;
-  }
+ .navtoggle.responsive li {
+	display: block;
+	text-align: center;
+	padding: 10px 0;
+ }
 
  .navtoggle.responsive li:last-child {
 	 padding: 0 0 10px;
  }
-}
 
-
+ }
 
 
 /* ==============================
@@ -420,15 +407,14 @@ Medium devices (640px and larger)
     float: right;
     margin-top: 4px;
   }
-	.navtoggle li:not(:last-child) {
+
+  .navtoggle li:not(:last-child) {
     display: inline-block;
   }
-  nav > ul {
-    margin: 1 em 0;
-  }
+
 	.logo {
   max-width: 250px;
-  
+
 }
   nav > ul > li {
     display: inline-block;
@@ -436,8 +422,14 @@ Medium devices (640px and larger)
   .navtoggle li:last-child {
     display: none;
   }
+  .navtoggle.responsive nav {
+   padding: 0px 0 0;
+ }
 
-
+ .navtoggle.responsive li  {
+   padding: 0px 0;
+   border-top: 1px solid rgba(255,127,80,0.5);
+ }
 
 .col-md-6 {
     width: 50%;
@@ -496,8 +488,8 @@ Large devices (1024px or larger)
   }
 
   [class*="col-"] {
-    float: left;
-    padding: 10px;
+  float: left;
+  padding: 10px;
   }
 	navtoggle li:last-child {
   display: none;
